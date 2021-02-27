@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 120: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        g "Я же говорил, она думает, что ты нищеброд вонючий, решила угостить тебя сладким из жалости.         
+
+Ren'Py Version: Ren'Py 7.4.2.1292
+Sat Feb 27 19:47:48 2021
