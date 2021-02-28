@@ -1,13 +1,14 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define i = Character('ГГ', color="#333333")
-define g = Character('Гиря', color="#c8ffc8")
-define c = Character('Отцовские Часы', color="#666666")
-define f = Character('Холодильник', color="#aaaaaa")
-define n = Character('Записная книжка', color="#777722")
-define h = Character('Шляпа', color="#111111")
-define a = Character('Анна', color="#ff55bb")
+define i = Character ('Увядающее Тело', color="#8a8a8a") 
+define g = Character ('16-килограммовая Гиря', color="#062C06")
+define c = Character ('Отцовские часы', color="#AC4C4C") 
+define n = Character ('Забвенная Записная книжка', color="#F4FA1C")
+define h = Character ('Эпатажная шляпа', color="#A05B1B")
+define m = Character ('Менеджер', color="#FF0000")
+define a = Character ('Анна', color="#00E5FF") 
+define f = Character ('Опустошенный Холодильник', color="#80C8BA")
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
