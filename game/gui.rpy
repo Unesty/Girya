@@ -49,26 +49,26 @@ define gui.muted_color = u'#512800'
 define gui.hover_muted_color = u'#7a3d00'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = u'#ffffff'
-define gui.interface_text_color = u'#ffffff'
+define gui.text_color = u'#FBFBFB'
+define gui.interface_text_color = u'#404040'
 
 
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "first.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Maler.ttf"
 
 ## Шрифт, используемый текстом вне игры.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "Maler.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 33
+define gui.text_size = 32
 
 ## Размер имён персонажей.
-define gui.name_text_size = 45
+define gui.name_text_size = 40
 
 ## Размер текста в пользовательском интерфейсе.
 define gui.interface_text_size = 33
@@ -95,11 +95,11 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
 
 ## Высота текстового окна, содержащего диалог.
-define gui.textbox_height = 278
+define gui.textbox_height = 315
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр и
 ## 1.0 — низ.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 1.1
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
@@ -115,8 +115,8 @@ define gui.name_xalign = 0.0
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 400
+define gui.namebox_height = 1
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
