@@ -118,6 +118,9 @@ define gui.name_xalign = 0.0
 define gui.namebox_width = 400
 define gui.namebox_height = 1
 
+define gui.namebox_width = None
+define gui.namebox_height = None
+
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
 define gui.namebox_borders = Borders(5, 5, 5, 5)
