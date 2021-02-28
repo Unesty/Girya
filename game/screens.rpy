@@ -301,7 +301,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Начать") action Start()
+            textbutton _("Собраться с духом") action Start()
 
         else:
 
@@ -309,9 +309,9 @@ screen navigation():
 
             textbutton _("Сохранить") action ShowMenu("save")
 
-        textbutton _("Загрузить") action ShowMenu("load")
+        textbutton _("Рефлексировать") action ShowMenu("load")
 
-        textbutton _("Настройки") action ShowMenu("preferences")
+        textbutton _("Подготовиться") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -321,18 +321,18 @@ screen navigation():
 
             textbutton _("Главное меню") action MainMenu()
 
-        textbutton _("Об игре") action ShowMenu("about")
+#        textbutton _("Об игре") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+#        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Помощь не необходима и не относится к мобильным устройствам.
-            textbutton _("Помощь") action ShowMenu("help")
+#            textbutton _("Помощь") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## Кнопка выхода блокирована в iOS и не нужна на Android и в веб-
             ## версии.
-            textbutton _("Выход") action Quit(confirm=not main_menu)
+            textbutton _("Сбежать") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
