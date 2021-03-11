@@ -1,22 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 63, in script
-    h "Хэй, босс. Решил проветриться, это круто. Сегодня довольно солнечно, цепляй меня и погнали."
-Exception: Sayer 'h' is not defined.
+While loading <'MatrixColor' <'Image' u'g1.png'> (0.33071, 0.60792, 0.06137, 0, 0, 0.18071, 0.7579199999999999, 0.06137, 0, 0, 0.18071, 0.60792, 0.21137, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1)>:
+  File "game/script.rpy", line 53, in script
+    i "В этом чертовом городе всегда идет дождь?"
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'g1.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 63, in script
-    h "Хэй, босс. Решил проветриться, это круто. Сегодня довольно солнечно, цепляй меня и погнали."
-  File "/tmp/user/Downloads/renpy-7.4.2-sdk/renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/tmp/user/Downloads/renpy-7.4.2-sdk/renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'h' is not defined.
+  File "game/script.rpy", line 53, in script
+    i "В этом чертовом городе всегда идет дождь?"
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/ast.py", line 683, in execute
+    statement_name(getattr(who, "statement_name", "say"))
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/ast.py", line 46, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/exports.py", line 1646, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/core.py", line 2610, in do_with
+    clear=clear)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/transition.py", line 367, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/transform.py", line 933, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 116, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/im.py", line 1320, in load
+    surf = cache.get(self.image)
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "/tmp/user/Downloads/renpy-7.4.3-sdk/renpy/display/im.py", line 688, in load
+    raise e
+IOError: Couldn't find file 'g1.png'.
 
-Linux-5.10.17-1-lts-x86_64-with-glibc2.2.5
-Ren'Py 7.4.2.1292
-Girya 1.0
-Sat Feb 27 19:19:45 2021
+Linux-5.11.5-arch1-1-x86_64-with-glibc2.2.5
+Ren'Py 7.4.3.1414
+16 килограммов 1.0
+Thu Mar 11 17:31:05 2021
